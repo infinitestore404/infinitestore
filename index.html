@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Store - Tu Plataforma de Ventas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Vincula Font Awesome -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            color: #ddd; /* Texto en un tono más claro */
+        }
+
+        header {
+            background-image: url('banner.jpg'); /* Cambia esto al nombre de tu imagen */
+            background-size: cover; /* Cubre todo el encabezado */
+            background-position: center; /* Centra la imagen */
+            color: #ddd; /* Texto en un tono claro */
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .cta {
+            background: #4d4d4d; /* Color del botón "¡Comienza a Vender!" */
+            color: #ddd; /* Cambiar color del texto */
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s;
+        }
+
+        .cta:hover {
+            background: #6d6d6d; /* Color más claro al pasar el mouse */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Para el logo a la derecha */
+        }
+
+        .logo {
+            position: absolute; /* Posicionar el logo */
+            top: 20px;
+            right: 20px;
+            width: 100px; /* Cambia el tamaño según necesites */
+        }
+
+        section {
+            background: #282828; /* Fondo oscuro para secciones */
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #000; /* Cambiar a negro */
+        }
+
+        .details {
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            background: #282828; /* Fondo oscuro para el pie de página */
+            color: #ddd; /* Texto en un tono claro */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background: #4d4d4d; /* Color del botón de envío */
+            color: #ddd; /* Cambiar color del texto */
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #6d6d6d; /* Color más claro al pasar el mouse */
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #4d4d4d; /* Color de los iconos de redes sociales */
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>INFINITE STORE</h1>
+    <p>Tu plataforma ideal para emprendedores.</p>
+    <a href="#inscripcion" class="cta">¡Comienza a Vender!</a>
+    <img src="Logo Estudio de Diseño Circular Femenino Rosa y Negro (13).png" alt="Logo de Infinite Store" class="logo"> <!-- Cambia "ruta/del/logo.png" al nombre correcto de tu archivo -->
+</header>
+
+<div class="container">
+    <section>
+        <h2>Descripción de Infinite Store</h2>
+        <p>¡Bienvenido a Infinite Store! Aquí, facilitamos el camino para que nuevos emprendedores puedan vender sus productos en línea sin costos de inscripción ni mensualidades.</p>
+    </section>
+
+    <section>
+        <h2>Beneficios de Usar Infinite Store</h2>
+        <p class="details"><strong>Sin Costo Inicial:</strong> Comienza a vender sin inversión inicial.</p>
+        <p class="details"><strong>Asesoría Personalizada:</strong> Obtén apoyo en planificación fiscal y estrategias de ventas.</p>
+        <p class="details"><strong>Alcance Global:</strong> Conéctate con compradores de todo el mundo.</p>
+    </section>
+
+    <section>
+        <h2>Formulario de Inscripción</h2>
+        <form action="submit_form.php" method="post" id="inscripcion">
+            <input type="text" name="nombre_empresa" placeholder="Nombre de Empresa" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="correo" placeholder="Tu Correo Electrónico" required>
+            <input type="submit" value="Regístrate">
+        </form>
+    </section>
+
+    <section>
+        <h2>Conéctate con Nosotros</h2>
+        <p>Síguenos en nuestras redes sociales para actualizaciones y más:</p>
+        <div class="social-links">
+            <a href="http://infinitestore.free.nf" class="fab fa-wordpress"></a>
+            <a href="https://www.facebook.com/profile.php?id=61565698760792" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/infinite_store444/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/@InfiniteStore444" class="fab fa-youtube"></a>
+            <a href="." class="fab fa-gmail"></a>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <p>© 2024 Infinite Store. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Aquí puedes agregar scripts adicionales si es necesario
+</script>
+
+</body>
+</html>
